@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - GauriInk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>GauriInk</h1>
+            </div>
+            <div class="nav-links">
+                <a href="/gari/index.html">Home</a>
+                <a href="/gari/about.html">About</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle">Industry <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="/gari/food-industry.html">Food Industry</a>
+                        <a href="/gari/beverage-section.html">Beverage Industry</a>
+                        <a href="/gari/pharma-cosmetics-section.html">Pharmaceutical, Cosmetics & Personal Care</a>
+                        <a href="/gari/building-materials-section.html">Building Materials</a>
+                    </div>
+                </div>
+                <a href="/gari/products.html" class="active">Products</a>
+                <a href="index.html#gallery">Our Gallery</a>
+                <a href="/gari/careers.html">Career</a>
+                <a href="/gari/contact.html">Contact Us</a>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Products Hero Section -->
+    <section class="products-hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <span class="hero-subtitle">Our Product Range</span>
+            <h1>Premium Printing Solutions</h1>
+            <p>Discover our comprehensive range of cutting-edge industrial printing technologies</p>
+            <div class="hero-features">
+                <div class="feature">
+                    <i class="fas fa-print"></i>
+                    <span>High-Speed Printing</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-cog"></i>
+                    <span>Advanced Technology</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Premium Quality</span>
+                </div>
+            </div>
+            <!-- <div class="product-search">
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search for products...">
+                </div>
+            </div> -->
+        </div>
+        <div class="hero-shape">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Products Grid Section -->
+    <section class="products-grid-section">
+        <div class="container">
+            <div class="products-filter">
+                <button class="filter-btn active" data-category="all">All Products</button>
+                <button class="filter-btn" data-category="cij">CIJ Printers</button>
+                <button class="filter-btn" data-category="tij">TIJ Printers</button>
+                <button class="filter-btn" data-category="laser">Laser Systems</button>
+                <button class="filter-btn" data-category="handheld">Handheld Devices</button>
+                <button class="filter-btn" data-category="industrial">Industrial Printers</button>
+            </div>
+
+            <div class="products-grid">
+                <!-- Citronix CIJ -->
+                <div class="product-card" data-category="cij">
+                    <div class="product-image">
+                        <img src="productsimages/citronix cij.png" alt="Citronix CIJ Printer">
+                        <div class="product-overlay">
+                            <a href="#" class="details-btn">View Details</a>
+                        </div>
+
+                    </div>
+                    <div class="product-info">
+                        <h3>Citronix CIJ Printer</h3>
+                        <p>Advanced continuous inkjet printer with superior reliability and print quality. Perfect for high-speed production environments.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> High-speed printing up to 1000ft/min</li>
+                            <li><i class="fas fa-check"></i> IP55 rated stainless steel cabinet</li>
+                            <li><i class="fas fa-check"></i> Smart maintenance system</li>
+                            <li><i class="fas fa-check"></i> Multi-line coding capability</li>
+                        </ul>
+                        <div class="text-center1 mt-3">
+                            <a href="/gari/ttoprinter.html" class="btn btn-primary1">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Citronix TIJ -->
+                <div class="product-card" data-category="tij">
+                    <div class="product-image">
+                        <img src="productsimages/Citronix TIJ.png" alt="Citronix TIJ Printer">
+                        <div class="product-overlay">
+                            <a href="#" class="details-btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Citronix TIJ Printer</h3>
+                        <p>High-resolution thermal inkjet printer for precise and reliable coding applications.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> High-resolution printing</li>
+                            <li><i class="fas fa-check"></i> Maintenance-free operation</li>
+                            <li><i class="fas fa-check"></i> Quick cartridge replacement</li>
+                            <li><i class="fas fa-check"></i> User-friendly interface</li>
+                        </ul>
+                        <div class="text-center1 mt-3">
+                            <a href="/gari/ttoprinter.html" class="btn btn-primary1">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAMJET MAKRO -->
+                <div class="product-card" data-category="industrial">
+                    <div class="product-image">
+                        <img src="productsimages/FAMJET MAKRO LCP.png" alt="FAMJET MAKRO LCP">
+                        <div class="product-overlay">
+                            <a href="#" class="details-btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>FAMJET MAKRO LCP</h3>
+                        <p>High-performance large character printer for industrial packaging and coding applications.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Large format printing</li>
+                            <li><i class="fas fa-check"></i> Multiple printhead configuration</li>
+                            <li><i class="fas fa-check"></i> Robust industrial design</li>
+                            <li><i class="fas fa-check"></i> Advanced touch interface</li>
+                        </ul>
+                        <div class="text-center1 mt-3">
+                            <a href="/gari/ttoprinter.html" class="btn btn-primary1">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOENIX FX ONE -->
+                <div class="product-card" data-category="industrial">
+                    <div class="product-image">
+                        <img src="productsimages/FOENIX FX ONE (CARTON CODING).png" alt="FOENIX FX ONE">
+                        <div class="product-overlay">
+                            <a href="#" class="details-btn">View Details</a>
+                        </div>
+
+                    </div>
+                    <div class="product-info">
+                        <h3>FOENIX FX ONE Carton Coder</h3>
+                        <p>Specialized carton coding solution for precise and consistent marking on packaging materials.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Dedicated carton coding</li>
+                            <li><i class="fas fa-check"></i> High-speed operation</li>
+                            <li><i class="fas fa-check"></i> Easy maintenance</li>
+                            <li><i class="fas fa-check"></i> Consistent print quality</li>
+                        </ul>
+                        <div class="text-center1 mt-3">
+                            <a href="/gari/ttoprinter.html" class="btn btn-primary1">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HANDCODER -->
+                <div class="product-card" data-category="handheld">
+                    <div class="product-image">
+                        <img src="productsimages/HANDCODER.png" alt="Handcoder">
+                        <div class="product-overlay">
+                            <a href="#" class="details-btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Portable Handcoder</h3>
+                        <p>Versatile handheld coding solution for flexible marking requirements.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Ergonomic design</li>
+                            <li><i class="fas fa-check"></i> Quick-change cartridge</li>
+                            <li><i class="fas fa-check"></i> Multiple font sizes</li>
+                            <li><i class="fas fa-check"></i> Portable operation</li>
+                        </ul>
+                        <div class="text-center1 mt-3">
+                            <a href="/gari/ttoprinter.html" class="btn btn-primary1">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HANDHELD LASER -->
+                <div class="product-card" data-category="handheld">
+                    <div class="product-image">
+                        <img src="productsimages/HANDHELD LASER.png" alt="Handheld Laser">
+                        <div class="product-overlay">
+                            <a href="#" class="details-btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Handheld Laser Marker</h3>
+                        <p>Portable laser marking solution for precise and permanent marking on various materials.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Portable laser marking</li>
+                            <li><i class="fas fa-check"></i> Permanent marking</li>
+                            <li><i class="fas fa-check"></i> Multiple material support</li>
+                            <li><i class="fas fa-check"></i> Safety features</li>
+                        </ul>
+                        <div class="text-center1 mt-3">
+                            <a href="/gari/ttoprinter.html" class="btn btn-primary1">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HX CARTRO -->
+                <div class="product-card" data-category="industrial">
+                    <div class="product-image">
+                        <img src="productsimages/HX CARTRO CARTON CODING.png" alt="HX CARTRO">
+                        <div class="product-overlay">
+                            <a href="#" class="details-btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>HX CARTRO Carton Coder</h3>
+                        <p>Advanced carton coding system for high-quality package marking.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Specialized carton coding</li>
+                            <li><i class="fas fa-check"></i> High resolution</li>
+                            <li><i class="fas fa-check"></i> Fast printing speed</li>
+                            <li><i class="fas fa-check"></i> Easy integration</li>
+                        </ul>
+                        <div class="text-center1 mt-3">
+                            <a href="/gari/ttoprinter.html" class="btn btn-primary1">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HX MEGALO -->
+                <div class="product-card" data-category="industrial">
+                    <div class="product-image">
+                        <img src="productsimages/HX MEGALO 70MM PRINTER.png" alt="HX MEGALO">
+                        <div class="product-overlay">
+                            <a href="#" class="details-btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>HX MEGALO 70MM Printer</h3>
+                        <p>Wide-format industrial printer for large character printing applications.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> 70mm print width</li>
+                            <li><i class="fas fa-check"></i> Industrial-grade build</li>
+                            <li><i class="fas fa-check"></i> Multiple font options</li>
+                            <li><i class="fas fa-check"></i> High-speed printing</li>
+                        </ul>
+                        <div class="text-center1 mt-3">
+                            <a href="/gari/ttoprinter.html" class="btn btn-primary1">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HX NITRO TIJ -->
+                <div class="product-card" data-category="tij">
+                    <div class="product-image">
+                        <img src="productsimages/HX NITRO TIJ.png" alt="HX NITRO TIJ">
+                        <div class="product-overlay">
+                            <a href="#" class="details-btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>HX NITRO TIJ</h3>
+                        <p>Advanced thermal inkjet printer for high-resolution coding needs.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Ultra-high resolution</li>
+                            <li><i class="fas fa-check"></i> Fast-drying ink system</li>
+                            <li><i class="fas fa-check"></i> Compact design</li>
+                            <li><i class="fas fa-check"></i> Zero maintenance</li>
+                        </ul>
+                        <div class="text-center1 mt-3">
+                            <a href="/gari/ttoprinter.html" class="btn btn-primary1">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LASER PRINTER -->
+                <div class="product-card" data-category="laser">
+                    <div class="product-image">
+                        <img src="productsimages/LASER PRINTER CO2 FIBER UV FIBER.png" alt="Laser Printer System">
+                        <div class="product-overlay">
+                            <a href="#" class="details-btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Advanced Laser System</h3>
+                        <p>Versatile laser marking solution available in CO2, Fiber, and UV configurations.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Multiple laser sources</li>
+                            <li><i class="fas fa-check"></i> Permanent marking</li>
+                            <li><i class="fas fa-check"></i> High-speed capability</li>
+                            <li><i class="fas fa-check"></i> Network integration</li>
+                        </ul>
+                        <div class="text-center1 mt-3">
+                            <a href="/gari/ttoprinter.html" class="btn btn-primary1">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MINICODER -->
+                <div class="product-card" data-category="handheld">
+                    <div class="product-image">
+                        <img src="productsimages/MINICODER.png" alt="MINICODER">
+                        <div class="product-overlay">
+                            <a href="#" class="details-btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>MINICODER</h3>
+                        <p>Compact and portable coding solution for small-scale marking needs.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Compact size</li>
+                            <li><i class="fas fa-check"></i> Easy to use</li>
+                            <li><i class="fas fa-check"></i> Battery operated</li>
+                            <li><i class="fas fa-check"></i> Multiple ink options</li>
+                        </ul>
+                        <div class="text-center1 mt-3">
+                            <a href="/gari/ttoprinter.html" class="btn btn-primary1">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- POLYTIJ ILLUMEX -->
+                <div class="product-card" data-category="tij">
+                    <div class="product-image">
+                        <img src="productsimages/POLYTIJ ILLUMEX TIJ    X2 X4 ECO.png" alt="POLYTIJ ILLUMEX">
+                        <div class="product-overlay">
+                            <a href="#" class="details-btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>POLYTIJ ILLUMEX TIJ</h3>
+                        <p>Eco-friendly thermal inkjet printer with multiple configuration options.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Eco-friendly design</li>
+                            <li><i class="fas fa-check"></i> Multiple configurations</li>
+                            <li><i class="fas fa-check"></i> High-quality output</li>
+                            <li><i class="fas fa-check"></i> Cost-effective</li>
+                        </ul>
+                        <div class="text-center1 mt-3">
+                            <a href="/gari/ttoprinter.html" class="btn btn-primary1">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TTO PRINTER -->
+                <div class="product-card" data-category="industrial">
+                    <div class="product-image">
+                        <img src="productsimages/TTO PRINTER.png" alt="TTO PRINTER">
+                        <div class="product-overlay">
+                            <a href="#" class="details-btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>TTO Printer</h3>
+                        <p>Thermal Transfer Overprinting solution for flexible packaging applications.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> High-quality coding</li>
+                            <li><i class="fas fa-check"></i> Flexible packaging</li>
+                            <li><i class="fas fa-check"></i> Quick ribbon change</li>
+                            <li><i class="fas fa-check"></i> Low maintenance</li>
+                        </ul>
+                        <div class="text-center1 mt-3">
+                            <a href="/gari/ttoprinter.html" class="btn btn-primary1">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Thermal inject printer -->
+                <div class="product-card" data-category="industrial">
+                    <div class="product-image">
+                        <img src="featureProducts/ThermalInkjetPrintersTij.webp" alt="Thermal Inkjet Printer">
+                        <div class="product-overlay">
+                            <a href="#" class="details-btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Thermal Inkjet Printer</h3>
+                        <p>Experience next-generation thermal printing technology. Ideal for pharmaceutical and food packaging with its clean, cartridge-based system and HD resolution.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> High-Quality Prints</li>
+                            
+                            <li><i class="fas fa-check"></i> Compact design</li>
+                            <li><i class="fas fa-check"></i> Cost-Effective</li>
+                        </ul>
+                        <div class="text-center1 mt-3">
+                            <a href="/gari/ttoprinter.html" class="btn btn-primary1">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Support Section -->
+    <section class="product-support">
+        <div class="container">
+            <h2>Comprehensive Support Services</h2>
+            <div class="support-grid">
+                <div class="support-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Technical Support</h3>
+                    <p>24/7 expert technical assistance for all our products with rapid response times</p>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Training Programs</h3>
+                    <p>Comprehensive training for operators and maintenance staff to maximize efficiency</p>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Maintenance Services</h3>
+                    <p>Preventive maintenance packages and emergency repair services available</p>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Consultation</h3>
+                    <p>Expert advice on choosing the right printing solution for your specific needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading Animation -->
+    <div class="loading-animation" id="loader">
+        <div class="loader"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-waves">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Gauri Ink is a leading manufacturer of premium ink solutions, committed to quality, innovation,
+                        and customer satisfaction. Our products are designed to meet the highest standards of printing
+                        excellence.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/gari/about.html">About Us</a></li>
+                        <li><a href="/gari/products.html">Products</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="/gari/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>S.No. 86, Jambhulwadi, 
+                                Ambegaon,<br> Pune 411046,
+                                Maharashtra</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+919422021038</span>
+                            
+                    
+                        </li>
+                        <li>
+                            
+                            
+                            <i class="fas fa-phone"></i>
+                            <span>+917756055888</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@gi-tpl.com</span>
+                        </li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <p>&copy; 2025 Gauri Ink. All rights reserved.Developed By Dw Innovation Pvt.Ltd</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="products.js"></script>
+</body>
+
+</html>

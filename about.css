@@ -1,0 +1,735 @@
+/* Factsheet Section Styles */
+.factsheet-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8f9ff 0%, #f1f4ff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.factsheet-section::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(45deg, #4f46e5, #3b82f6);
+    border-radius: 50%;
+    top: -150px;
+    right: -150px;
+    opacity: 0.1;
+}
+
+.factsheet-section::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, #3b82f6, #60a5fa);
+    border-radius: 50%;
+    bottom: -100px;
+    left: -100px;
+    opacity: 0.1;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    background: linear-gradient(45deg, #1e40af, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(45deg, #4f46e5, #3b82f6);
+    border-radius: 2px;
+}
+
+.factsheet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.factsheet-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 40px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.factsheet-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #4f46e5, #3b82f6);
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 0;
+}
+
+.factsheet-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-color: rgba(79, 70, 229, 0.3);
+}
+
+.factsheet-card:hover::before {
+    opacity: 0.03;
+}
+
+.card-icon {
+    position: relative;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(45deg, #4f46e5, #3b82f6);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+}
+
+.factsheet-card:hover .card-icon {
+    transform: rotateY(180deg);
+    background: linear-gradient(45deg, #3b82f6, #4f46e5);
+}
+
+.card-content {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+}
+
+.card-content h3 {
+    color: #1e40af;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.factsheet-card:hover .card-content h3 {
+    background: linear-gradient(45deg, #1e40af, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-content p {
+    color: #4b5563;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.card-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-content ul li {
+    color: #4b5563;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    padding-left: 28px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.card-content ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #4f46e5;
+    transition: all 0.3s ease;
+}
+
+.factsheet-card:hover .card-content ul li::before {
+    transform: translateX(5px);
+    color: #3b82f6;
+}
+
+/* Custom Styles for Different Card Types */
+.factsheet-card.business {
+    border-left: 4px solid #4f46e5;
+}
+
+.factsheet-card.team {
+    border-left: 4px solid #3b82f6;
+}
+
+.factsheet-card.location {
+    border-left: 4px solid #60a5fa;
+}
+
+.factsheet-card.legal {
+    border-left: 4px solid #818cf8;
+}
+
+/* Animation for Cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.factsheet-card {
+    animation: fadeInUp 0.6s ease backwards;
+}
+
+.factsheet-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.factsheet-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.factsheet-card:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .factsheet-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .factsheet-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .factsheet-card {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .factsheet-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-icon {
+        margin: 0 auto 20px;
+    }
+
+    .card-content ul li {
+        padding-left: 0;
+    }
+
+    .card-content ul li::before {
+        position: static;
+        margin-right: 10px;
+    }
+}
+
+/* Brands Section */
+.brands-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.brands-section::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(45deg, #6366f1, #818cf8);
+    border-radius: 50%;
+    bottom: -150px;
+    left: -150px;
+    opacity: 0.05;
+}
+
+.brands-container {
+    margin-top: 50px;
+}
+
+.brand-category {
+    margin-bottom: 40px;
+}
+
+.brand-category h3 {
+    font-size: 1.8rem;
+    color: #1e293b;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.brand-category h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(45deg, #6366f1, #818cf8);
+    border-radius: 2px;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.brand-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.brand-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(45deg, #6366f1, #818cf8);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.brand-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.brand-card:hover::before {
+    transform: scaleX(1);
+}
+
+.brand-logo {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, #f1f5f9, #f8fafc);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: all 0.4s ease;
+}
+
+.brand-logo i {
+    font-size: 2.5rem;
+    color: #6366f1;
+    transition: all 0.4s ease;
+}
+
+.brand-card:hover .brand-logo {
+    transform: rotateY(180deg);
+    background: linear-gradient(45deg, #6366f1, #818cf8);
+}
+
+.brand-card:hover .brand-logo i {
+    color: white;
+}
+
+.brand-name {
+    font-size: 1.4rem;
+    color: #1e293b;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.brand-card:hover .brand-name {
+    color: #6366f1;
+}
+
+/* Business Details Section */
+.business-details-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.business-details-section::before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(45deg, #3b82f6, #60a5fa);
+    border-radius: 50%;
+    top: -200px;
+    right: -200px;
+    opacity: 0.05;
+}
+
+.business-details-section {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.details-card {
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.details-card .info-grid {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+}
+
+.details-card .info-item {
+    padding: 12px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+.details-card:hover .info-item {
+    transform: translateX(5px);
+}
+
+.payment-list li {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.payment-list li:hover {
+    transform: translateX(5px);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.feature-list li {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 12px 15px 12px 35px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.feature-list li:hover {
+    transform: translateX(5px);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #64748b;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.business-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.details-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.details-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    transition: all 0.4s ease;
+}
+
+.details-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.details-card:hover::before {
+    width: 100%;
+    opacity: 0.05;
+}
+
+/* Card Type Specific Styles */
+.details-card.statutory::before { background: #4f46e5; }
+.details-card.payment::before { background: #0891b2; }
+.details-card.packaging::before { background: #059669; }
+.details-card.shipment::before { background: #9333ea; }
+
+.details-card .card-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon Background Colors */
+.statutory .card-icon { background: linear-gradient(45deg, #4338ca, #4f46e5); }
+.payment .card-icon { background: linear-gradient(45deg, #0e7490, #0891b2); }
+.packaging .card-icon { background: linear-gradient(45deg, #047857, #059669); }
+.shipment .card-icon { background: linear-gradient(45deg, #7e22ce, #9333ea); }
+
+.details-card:hover .card-icon {
+    transform: rotateY(180deg);
+}
+
+.details-card .card-content {
+    flex: 1;
+}
+
+.details-card .card-content h3 {
+    color: #1e293b;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Info Grid for Statutory Details */
+.info-grid {
+    display: grid;
+    gap: 15px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-item .label {
+    color: #64748b;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.info-item .value {
+    color: #1e293b;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Payment List Styles */
+.payment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.payment-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1e293b;
+    font-size: 1.1rem;
+}
+
+.payment-list li i {
+    color: #059669;
+    font-size: 1.2rem;
+}
+
+/* Feature List Styles */
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list li {
+    color: #1e293b;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.feature-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #3b82f6;
+    transition: all 0.3s ease;
+}
+
+.details-card:hover .feature-list li::before {
+    transform: translateX(5px);
+}
+
+/* Animation for Cards */
+.details-card {
+    animation: fadeInUp 0.6s ease backwards;
+}
+
+.details-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.details-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.details-card:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .business-details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .business-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .details-card {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .details-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .card-icon {
+        margin: 0 auto 20px;
+    }
+
+    .feature-list li, .payment-list li {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .feature-list li::before {
+        display: none;
+    }
+
+    .info-item {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .brands-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+        gap: 20px;
+    }
+
+    .brand-category h3 {
+        font-size: 1.5rem;
+    }
+
+    .brand-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .brand-logo i {
+        font-size: 2rem;
+    }
+
+    .brand-name {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .brands-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .brand-card {
+        padding: 20px;
+    }
+
+    .feature-list li, .payment-list li {
+        padding: 10px;
+        text-align: center;
+    }
+}

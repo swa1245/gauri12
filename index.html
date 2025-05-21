@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GauriInk - Premium Ink Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js" defer></script>
+    <script src="feature-slider.js" defer></script>
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <style>
+        .section-title h2 {
+            align-items: center;
+            text-align: center;
+            margin-left: 100px;
+        }
+
+        .intro-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: 2rem auto;
+            max-width: 100%;
+        }
+
+        .intro-image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section-header h2 {
+            color: #000000;
+        }
+        
+    </style>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>GauriInk</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="about.html">About</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle">Industry <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="food-industry.html">Food Industry</a>
+                        <a href="beverage-section.html">Beverage Industry</a>
+                        <a href="pharma-cosmetics-section.html">Pharmaceutical, Cosmetics & Personal Care</a>
+                        <a href="building-materials-section.html">Building Materials</a>
+                    </div>
+                </div>
+                <a href="products.html">Products</a>
+                <a href="index.html#gallery">Our Gallery</a>
+                <a href="careers.html">Career</a>
+
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section id="home" class="hero-slider">
+        <div class="slider-container">
+
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1>Innovation in Every Drop</h1>
+                    <p>Leading the future of printing solutions</p>
+                    <!-- <a href="#contact" class="cta-button">Get in Touch</a> -->
+                </div>
+                <div class="slide-bg" style="background-image: url('banner/Citronics-b3.jpg')"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>Colors That Inspire</h1>
+                    <p>Transform your vision into vibrant reality</p>
+                    <!-- <a href="#products" class="cta-button">View Products</a> -->
+                </div>
+                <div class="slide-bg" style="background-image: url('banner/Citronics-b6.jpg')"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>Quality That Speaks</h1>
+                    <p>Your trusted partner in printing excellence</p>
+                    <!-- <a href="#contact" class="cta-button">Contact Us</a> -->
+                </div>
+                <div class="slide-bg" style="background-image: url('banner/Citronics-b7.jpg')"></div>
+            </div>
+            <div class="slide ">
+                <div class="slide-content">
+                    <h1>Crafting Colors of Excellence</h1>
+                    <p>Premium inks for premium results</p>
+                    <!-- <a href="#products" class="cta-button">Explore Our Range</a> -->
+                </div>
+                <div class="slide-bg" style="background-image: url('banner/Citronics-b2.jpg')"></div>
+            </div>
+        </div>
+
+        <!-- Slider Navigation -->
+        <div class="slider-nav">
+            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <div class="slide-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <section id="feature-products" class="feature-products-section">
+        <div class="container">
+            <h2 class="section-title">Our Featured Products</h2>
+    
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="productsimages/citronix cij.png" alt="Citronix CIJ Printer">
+                            </div>
+                            <div class="product-info">
+                                <h3>Citronix CIJ Printer</h3>
+                                <p>Advanced continuous inkjet printer with superior reliability and print quality. </p>
+                                <!-- <ul class="features-list">
+                                    <li><i class="fas fa-check"></i> High-speed printing up to 1000ft/min</li>
+                                    <li><i class="fas fa-check"></i> IP55 rated stainless steel cabinet</li>
+                                    <li><i class="fas fa-check"></i> Smart maintenance system</li>
+                                    <li><i class="fas fa-check"></i> Multi-line coding capability</li>
+                                </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="productsimages/Citronix TIJ.png" alt="Citronix TIJ Printer">
+                            </div>
+                            <div class="product-info">
+                                <h3>Citronix TIJ Printer</h3>
+                                <p>High-resolution thermal inkjet printer for precise and reliable coding applications.</p>
+                                <!-- <ul class="features-list">
+                                    <li><i class="fas fa-check"></i> High-resolution printing</li>
+                                    <li><i class="fas fa-check"></i> Maintenance-free operation</li>
+                                    <li><i class="fas fa-check"></i> Quick cartridge replacement</li>
+                                    <li><i class="fas fa-check"></i> User-friendly interface</li>
+                                </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="productsimages/HX CARTRO CARTON CODING.png" alt="HX CARTRO">
+                            </div>
+                            <div class="product-info">
+                                <h3>HX CARTRO Carton Coder</h3>
+                                <p>Advanced carton coding system for high-quality package marking.</p>
+                                <!-- <ul class="features-list">
+                                    <li><i class="fas fa-check"></i> Specialized carton coding</li>
+                                    <li><i class="fas fa-check"></i> High resolution</li>
+                                    <li><i class="fas fa-check"></i> Fast printing speed</li>
+                                    <li><i class="fas fa-check"></i> Easy integration</li>
+                                </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat similar swiper-slide blocks for other products -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="productsimages/HX NITRO TIJ.png" alt="HX NITRO TIJ">
+                            </div>
+                            <div class="product-info">
+                                <h3>HX NITRO TIJ</h3>
+                                <p>Advanced thermal inkjet printer for high-resolution coding needs.</p>
+                                <!-- <ul class="features-list">
+                                    <li><i class="fas fa-check"></i> Ultra-high resolution</li>
+                                    <li><i class="fas fa-check"></i> Fast-drying ink system</li>
+                                    <li><i class="fas fa-check"></i> Compact design</li>
+                                    <li><i class="fas fa-check"></i> Zero maintenance</li>
+                                </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-card">
+                            <div class="product-image">
+                                <img src="featureProducts/ThermalInkjetPrintersTij.webp" alt="Thermal Inkjet Printer">
+                            </div>
+                            <div class="product-info">
+                                <h3>Thermal Inkjet Printer</h3>
+                                <p>Ideal for pharmaceutical and food packaging with its clean, cartridge-based system and HD resolution.</p>
+                                <!-- <ul class="features-list">
+                                    <li><i class="fas fa-check"></i> High-Quality Prints</li>
+                                    
+                                    <li><i class="fas fa-check"></i> Compact design</li>
+                                    <li><i class="fas fa-check"></i> Cost-Effective</li>
+                                </ul> -->
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+    
+               
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+    
+           
+           
+        </div>
+        <div class="text-center mt-4">
+            <a href="/gari/products.html" class="btn btn-primary">Explore All Products</a>
+        </div>
+        
+    </section>
+    
+    
+    
+     
+
+    
+    <section id="company-intro" class="company-intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Gauri Inkk-Tec Private Limited</h2>
+                    <div class="intro-details">
+                        <p>Established as a Pvt. Limited Company firm in the year 2014 at Pune (Maharashtra, India), We
+                            "Gauri Inkk-Tec Private Limited" are a leading Wholesaler Trader and Service Provider of a
+                            wide range of Continuous Inkjet Printer And Thermal Inkjet Printers etc. Apart from this we
+                            also provide Barcode Printing Service.</p>
+                        <p>We offer these products at reasonable rates and deliver these within the promised time-frame.
+                            Under the headship of <strong>"Mr. Mukund Naik"</strong>, we have gained a huge clientele
+                            across the nation.</p>
+                    </div>
+                    <div class="intro-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Premium Quality Products</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Timely Delivery</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Extensive Client Network</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <img src="/gari/images/ci5500.jpg" alt="Gauri Inkk-Tec Facility">
+                    <div class="experience-badge">
+                        <span class="years">9+</span>
+                        <span class="text">Years of Excellence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="counter" data-target="700">0</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <h3>HAPPY CUSTOMERS</h3>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="counter" data-target="65">0</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <h3>PROJECTS COMPLETE</h3>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="counter" data-target="12">0</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <h3>PRODUCTS</h3>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">
+                        <span class="counter" data-target="22">0</span>
+                        <span class="plus">+</span>
+                    </div>
+                    <h3>YEARS OF EXPERIENCE</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Your Printing Solution for Every Packaging Material</h2>
+                <p class="section-subtitle">PRIMARY & SECONDARY PACKAGING APPLICATIONS</p>
+            </div>
+
+            <div class="products-showcase">
+                <div class="products-track">
+                    <div class="product-slide">
+                        <div class="product-item">
+                            <img src="sampleProducts/1.webp" alt="Product 1" loading="lazy">
+                            <div class="product-overlay">
+                                <span>Packaging Solution</span>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="sampleProducts/2.webp" alt="Product 2" loading="lazy">
+                            <div class="product-overlay">
+                                <span>Industrial Printing</span>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="sampleProducts/3.webp" alt="Product 3" loading="lazy">
+                            <div class="product-overlay">
+                                <span>Label Solutions</span>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="sampleProducts/4.png" alt="Product 4" loading="lazy">
+                            <div class="product-overlay">
+                                <span>Premium Inks</span>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="sampleProducts/5.webp" alt="Product 5" loading="lazy">
+                            <div class="product-overlay">
+                                <span>Specialty Printing</span>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="sampleProducts/6.webp" alt="Product 6" loading="lazy">
+                            <div class="product-overlay">
+                                <span>Custom Solutions</span>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="sampleProducts/7.webp" alt="Product 7" loading="lazy">
+                            <div class="product-overlay">
+                                <span>Advanced Printing</span>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="sampleProducts/8.webp" alt="Product 8" loading="lazy">
+                            <div class="product-overlay">
+                                <span>Professional Grade</span>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="sampleProducts/9.webp" alt="Product 9" loading="lazy">
+                            <div class="product-overlay">
+                                <span>High Performance</span>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="sampleProducts/10.webp" alt="Product 10" loading="lazy">
+                            <div class="product-overlay">
+                                <span>Precision Printing</span>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="sampleProducts/11.webp" alt="Product 11" loading="lazy">
+                            <div class="product-overlay">
+                                <span>Quality Assured</span>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="sampleProducts/12.webp" alt="Product 12" loading="lazy">
+                            <div class="product-overlay">
+                                <span>Innovative Tech</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="nav-btn prev" aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="nav-btn next" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="products-pagination"></div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <section id="about-citronix" class="citronix-section">
+        <div class="container">
+            <div class="citronix-grid">
+                <div class="citronix-content">
+                    <h2 class="section-title">About Citronix</h2>
+                    <div class="citronix-text">
+                        <p>Established in 2000, Citronix is a world-class manufacturer of Continuous Inkjet and Thermal
+                            Inkjet printers headquartered in Texas, USA. Citronix's printers are sold through a strong
+                            network of distributors and are renowned in the industry for their simplicity, reliability,
+                            capability and excellent value that offer to our customers.</p>
+
+                        <div class="global-presence">
+                            <div class="stat-item">
+                                <span class="stat-number">135+</span>
+                                <span class="stat-label">Countries Served</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">25+</span>
+                                <span class="stat-label">Years of Excellence</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">30</span>
+                                <span class="stat-label">Months Warranty</span>
+                            </div>
+                        </div>
+
+                        <h3>Our Journey in India</h3>
+                        <p>In India, Citronix began its operations in 2015 with a single distributor and today has more
+                            than eight distributors across the country. All of these distributors are trained by
+                            Citronix's technical manager in India and are fully equipped to meet your simple to complex
+                            application requirements with an excellent after-sales support system in place.</p>
+
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <i class="fas fa-flask"></i>
+                                <h4>Premium Ink Solutions</h4>
+                                <p>Complete range of inks suitable for all printing applications, with unmatched print
+                                    quality and performance.</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-shield-alt"></i>
+                                <h4>Industry-Leading Warranty</h4>
+                                <p>30 months warranty from the date of manufacturing, ensuring complete peace of mind
+                                    for our customers.</p>
+                            </div>
+                            <div class="feature-card">
+                                <i class="fas fa-tools"></i>
+                                <h4>Expert Support</h4>
+                                <p>Dedicated technical support team providing comprehensive installation and maintenance
+                                    services.</p>
+                            </div>
+                        </div>
+<!-- 
+                        <div class="industry-applications">
+                            <h3>Industry Applications</h3>
+                            <div class="industry-grid">
+                                <div class="industry-item">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>Food & Beverage</span>
+                                </div>
+                                <div class="industry-item">
+                                    <i class="fas fa-industry"></i>
+                                    <span>Manufacturing</span>
+                                </div>
+                                <div class="industry-item">
+                                    <i class="fas fa-pills"></i>
+                                    <span>Pharmaceuticals</span>
+                                </div>
+                                <div class="industry-item">
+                                    <i class="fas fa-box"></i>
+                                    <span>Packaging</span>
+                                </div>
+                                <div class="industry-item">
+                                    <i class="fas fa-microchip"></i>
+                                    <span>Electronics</span>
+                                </div>
+                                <div class="industry-item">
+                                    <i class="fas fa-car"></i>
+                                    <span>Automotive</span>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="citronix-image-section">
+                    <div class="image-grid">
+                        <img src="banner/Citronics-b3.jpg" alt="Ink Solutions" class="feature-image">
+
+
+                        <img src="banner/Citronics-b6.jpg" alt="Industrial Application" class="feature-image">
+                        <img src="banner/Citronics-b7.jpg" alt="Citronix Printer" class="feature-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="training" class="training-section">
+        <div class="container">
+            <h2 class="section-title">Training & Resources</h2>
+            <p class="section-subtitle">Learn from our expert tutorials and maintenance guides</p>
+
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="banner/Citronics-b2.jpg" alt="Printer Setup Guide">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Printer Setup Guide</h3>
+                        <p>Learn how to set up and configure your Citronix printer for optimal performance.</p>
+                        <div class="video-meta">
+                            <span><i class="far fa-clock"></i> 15:30</span>
+                            <span><i class="fas fa-level-up-alt"></i> Beginner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="banner/Citronics-b3.jpg" alt="Maintenance Tutorial">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Maintenance Tutorial</h3>
+                        <p>Essential maintenance procedures to keep your printer running smoothly.</p>
+                        <div class="video-meta">
+                            <span><i class="far fa-clock"></i> 12:45</span>
+                            <span><i class="fas fa-level-up-alt"></i> Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="banner/Citronics-b6.jpg" alt="Advanced Features">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Advanced Features</h3>
+                        <p>Explore advanced printing techniques and custom configurations.</p>
+                        <div class="video-meta">
+                            <span><i class="far fa-clock"></i> 20:15</span>
+                            <span><i class="fas fa-level-up-alt"></i> Advanced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="training-cta">
+                <h3>Need More Help?</h3>
+                <p>Access our complete library of training videos and documentation</p>
+                <a href="#" class="cta-button">View All Resources <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say About Us!</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">"Gauri Ink's premium ink solutions have transformed our printing
+                        quality. The color vibrancy and consistency are unmatched. Their technical support team is
+                        always ready to help!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://ui-avatars.com/api/?name=Rajesh+Kumar&background=random" alt="Rajesh Kumar"
+                            class="author-image">
+                        <div class="author-info">
+                            <h4>Rajesh Kumar</h4>
+                            <p>Production Manager, PrintTech Solutions</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">"We've been using Gauri Ink products for over 3 years now. Their
+                        eco-friendly ink options have helped us reduce our environmental impact while maintaining
+                        exceptional print quality."</p>
+                    <div class="testimonial-author">
+                        <img src="https://ui-avatars.com/api/?name=Priya+Sharma&background=random" alt="Priya Sharma"
+                            class="author-image">
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Director, EcoPrint Industries</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">"The consistency and reliability of Gauri Ink products have
+                        significantly reduced our maintenance downtime. Their quick delivery and competitive pricing
+                        make them our go-to supplier."</p>
+                    <div class="testimonial-author">
+                        <img src="https://ui-avatars.com/api/?name=Amit+Patel&background=random" alt="Amit Patel"
+                            class="author-image">
+                        <div class="author-info">
+                            <h4>Amit Patel</h4>
+                            <p>Operations Head, Mega Print Corp</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-waves">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>Gauri Ink is a leading manufacturer of premium ink solutions, committed to quality, innovation,
+                        and customer satisfaction. Our products are designed to meet the highest standards of printing
+                        excellence.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/gari/about.html">About Us</a></li>
+                        <li><a href="/gari/products.html">Products</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="/gari/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>S.No. 86, Jambhulwadi, 
+                                Ambegaon,<br> Pune 411046,
+                                Maharashtra</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+919422021038</span>
+                            
+                    
+                        </li>
+                        <li>
+                            
+                            
+                            <i class="fas fa-phone"></i>
+                            <span>+917756055888</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@gi-tpl.com</span>
+                        </li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <p>&copy; 2025 Gauri Ink. All rights reserved.Developed By Dw Innovation Pvt.Ltd</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
